@@ -61,7 +61,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         shift_tab {
@@ -75,13 +75,18 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp RIGHT_ARROW>;
             key-positions = <20 21>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        left_allow {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <19 18>;
         };
     };
 
@@ -142,10 +147,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans            &trans  &trans  &trans  &trans                       &kp F1  &kp F2          &kp UP_ARROW    &kp F4           &kp F5
+&trans            &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10
+&trans            &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans          &trans          &trans           &kp F11
+&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                   &kp F12
             >;
         };
 
