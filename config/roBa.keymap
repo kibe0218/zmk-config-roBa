@@ -88,6 +88,16 @@
             bindings = <&kp LEFT_ARROW>;
             key-positions = <19 18>;
         };
+
+        up_allow {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 8>;
+        };
+
+        downallow {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
