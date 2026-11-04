@@ -72,29 +72,34 @@
             key-positions = <11 10>;
         };
 
-        double_quotation {
+        right_allow {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            key-positions = <21 20>;
         };
 
         left_allow {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <19 18>;
+            key-positions = <19 20>;
         };
 
         up_allow {
             bindings = <&kp UP_ARROW>;
-            key-positions = <7 8>;
+            key-positions = <8 7>;
         };
 
-        downallow {
+        down_allow {
             bindings = <&kp DOWN_ARROW>;
-            key-positions = <31 32>;
+            key-positions = <32 31>;
+        };
+
+        pi {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 32>;
         };
     };
 
@@ -135,10 +140,10 @@
 
         default_layer_mac {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R             &kp T                                                         &kp Y            &kp U  &lt 4 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS       &kp H            &kp J  &kp K      &kp L    &lt 3 RETURN
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp COLON                        &kp SEMICOLON   &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 0 LANGUAGE_2      &kp LANGUAGE_1  &lt 2 BACKSPACE                             &mt RIGHT_COMMAND SLASH
+&kp Q                       &kp W         &kp E         &kp R             &kp T                                                         &kp Y            &kp U  &lt 4 I    &kp O    &kp P
+&kp A                       &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS       &kp H            &kp J  &kp K      &kp L    &lt 3 RETURN
+&mt LEFT_CONTROL Z          &kp X         &kp C         &kp V             &kp B        &kp COLON                        &kp SEMICOLON   &kp N            &kp M  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
+&mt LEFT_SHIFT KP_NUMBER_1  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 0 LANGUAGE_2      &kp LANGUAGE_1  &lt 2 BACKSPACE                             &mt RIGHT_COMMAND SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -146,10 +151,10 @@
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1             &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                               &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp KP_NUMBER_0
-&kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR       &kp PERCENT      &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp AMPERSAND     &kp PERCENT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans                      &trans             &trans           &trans           &trans           &trans                       &trans          &trans                                                                            &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR       &kp PERCENT                                                   &kp AMPERSAND     &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MINUS
+&kp KP_NUMBER_1  &kp KP_N2          &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp KP_NUMBER_0
+&kp KP_PLUS      &kp KP_ASTERISK    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans           &trans             &trans           &trans           &trans           &trans                       &trans          &trans                                                                            &kp PIPE
             >;
         };
 
