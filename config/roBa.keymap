@@ -141,8 +141,8 @@
         default_layer_mac {
             bindings = <
 &kp Q                       &kp W         &kp E         &kp R             &kp T                                                         &kp Y            &kp U  &lt 4 I    &kp O    &kp P
-&kp A                       &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS       &kp H            &kp J  &kp K      &kp L    &lt 3 RETURN
-&mt LEFT_CONTROL Z          &kp X         &kp C         &kp V             &kp B        &kp COLON                        &kp SEMICOLON   &kp N            &kp M  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
+&mt LEFT_CONTROL A          &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS       &kp H            &kp J  &kp K      &kp L    &lt 3 RETURN
+&kp Z                       &kp X         &kp C         &kp V             &kp B        &kp COLON                        &kp SEMICOLON   &kp N            &kp M  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
 &mt LEFT_SHIFT KP_NUMBER_1  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 0 LANGUAGE_2      &kp LANGUAGE_1  &lt 2 BACKSPACE                             &mt RIGHT_COMMAND SLASH
             >;
 
