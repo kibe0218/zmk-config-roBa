@@ -75,7 +75,7 @@
 
         left_allow {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
         };
 
         up_allow {
