@@ -19,9 +19,16 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        // Windowsレイヤーだけスクロール方向を反転
+        child {
+            layers = <1>;
+        input-processors =
+            <&zip_scroll_transform
+                    (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+        };
     };
 };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
